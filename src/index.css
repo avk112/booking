@@ -8,6 +8,7 @@ html, body {
   color: #777777;
 }
 
+
 .app {
   display: flex;
   flex-direction: column;
@@ -353,7 +354,7 @@ html, body {
   padding: 0;
   margin: 0 0 7% 0;
   box-sizing: border-box;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-color: white;
 }
 
@@ -381,13 +382,14 @@ html, body {
 
 .universalForm__item__selectBlock__dropdownBlock {
   display: flex;
-  max-height: 0;
+  /*max-height: 0;*/
   flex-direction: column;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
   transition: all 0.3s linear;
   background-color: white;
+  overflow-y: hidden;
   z-index: 10;
 }
 
@@ -401,16 +403,19 @@ html, body {
   box-sizing: border-box;
 }
 
-.universalForm__item__selectBlock__dropdownBlock select {
+.universalForm__item__selectBlock__dropdownBlock__select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   border: none;
   padding: 4.2% 0 0 0;
   margin: 0;
-  overflow: auto;
+  overflow: hidden;
 }
 
 
-.universalForm__item__selectBlock__dropdownBlock select option {
+.universalForm__item__selectBlock__dropdownBlock__select span {
   border-bottom: 1px solid #e3e2e2;
   font-size: 1.14em;
   line-height: 1.2em;
@@ -420,12 +425,12 @@ html, body {
   transition: all 0.2s ease;
 }
 
-.universalForm__item__selectBlock__dropdownBlock select option:hover {
+.universalForm__item__selectBlock__dropdownBlock__select span:hover {
   background-color: rgb(255, 153, 46);
   color: white;
 }
 
-.universalForm__item__selectBlock__dropdownBlock select option:last-child {
+.universalForm__item__selectBlock__dropdownBlock__select span:last-child {
   border-bottom: none;
   margin: 0;
 }

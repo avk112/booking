@@ -168,6 +168,7 @@
 
     .previewArea__interactiveBlock__row {
         height: calc(40.5em*1.55);
+        overflow-y: scroll;
     }
 
     .previewArea__interactiveBlock__row__item {

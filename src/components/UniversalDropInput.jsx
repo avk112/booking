@@ -21,26 +21,49 @@ const UniversalDropInput = ({defaultSelectedValue="", title="", name="", type="t
         setAvailableData(filteredData);
     };
 
-    const handleSelect = (e)=> {
-        const newValue = e.target.value;
+    // const handleSelect = (e)=> {
+    //     const newValue = e.target.value;
+    //     setSelectedItem(newValue);
+    //     handleVisible(e);
+    //     handleChange(e);
+    // };
+
+    const handleSelect = (value="")=> {
+        const e={
+            target:{
+                value:value,
+                name:name,
+                checked:true,
+                type:"select-one",
+        }};
+        const newValue = value;
         setSelectedItem(newValue);
         handleVisible(e);
         handleChange(e);
     };
 
 
+    // const optionsBlock = availableData.length > 0
+    //     ?
+    //     availableData.map((item)=>{
+    //         return <option key={item.id} value={item.name}>{item.name}</option>
+    //     })
+    //     :
+    //     <option disabled value="">No results found</option>;
     const optionsBlock = availableData.length > 0
         ?
         availableData.map((item)=>{
-            return <option key={item.id} value={item.name}>{item.name}</option>
+            return <span key={item.id} onClick={()=>handleSelect(item.name)}>{item.name}</span>
         })
         :
         <option disabled value="">No results found</option>;
 
-useEffect(()=>{
-    setSelectedItem(defaultSelectedValue);
-    setValue("");
-}, [resetInput])
+    useEffect(()=>{
+        setSelectedItem(defaultSelectedValue);
+        setValue("");
+    }, [resetInput]);
+
+
 
     return (
         <div  className={`universalForm__item ${className?.dropItem}`}>
@@ -64,10 +87,14 @@ useEffect(()=>{
                         placeholder="Start typing the city"
                         onChange={handleInput}
                     />
-                    <select name={name} value={selectedItem} size="6" onChange={handleSelect}>
-                        <option value="">None</option>
+                    {/*<select name={name} value={selectedItem} size="6" onChange={handleSelect}>*/}
+                    {/*    <option value="">None</option>*/}
+                    {/*    {optionsBlock}*/}
+                    {/*</select>*/}
+                    <div className="universalForm__item__selectBlock__dropdownBlock__select">
+                        <span  onClick={()=>handleSelect()}>None</span>
                         {optionsBlock}
-                    </select>
+                    </div>
                 </div>
             </div>
         </div>

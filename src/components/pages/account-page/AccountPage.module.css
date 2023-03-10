@@ -100,7 +100,6 @@
 
     .accountPage__item__ordersBlock {
         width: 64%;
-        font-size: calc(1em*3);
         line-height: 1.2;
     }
 
@@ -113,9 +112,16 @@
     }
 
     .accountPage__item__ordersBlock__order__ul li {
-        gap: 1em;
+        gap: 2em;
         margin: 0 0 5% 0;
-        padding: 0;
         line-height: 1.2;
+    }
+
+    .accountPage__item__ordersBlock__order__ul li h5 {
+        font-size: calc(1.13em*3);
+    }
+
+    .accountPage__item__ordersBlock__order__ul li span {
+        font-size: calc(1em*3);
     }
 }
