@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/booking/static/css/main.523467a3.css",
+    "main.js": "/booking/static/js/main.9299fc9d.js",
+    "static/media/mazda.jpg": "/booking/static/media/mazda.9a453aaa635ba0aead4d.jpg",
+    "static/media/acura.jpg": "/booking/static/media/acura.2c838aa84f84e042e611.jpg",
+    "static/media/volvo.jpg": "/booking/static/media/volvo.aac3e377391476ea1522.jpg",
+    "static/media/corolla.jpg": "/booking/static/media/corolla.128004aac65c9f82d456.jpg",
+    "static/media/mclaren.jpg": "/booking/static/media/mclaren.18539089b0adcee51a91.jpg",
+    "static/media/banner-turbo-car.png": "/booking/static/media/banner-turbo-car.b8afaca090e49de14ae2.png",
+    "static/media/ford-taurus-800x546-1.png": "/booking/static/media/ford-taurus-800x546-1.44fa686640dcfe98a900.png",
+    "static/media/Car-PNG-File.png": "/booking/static/media/Car-PNG-File.cbf6b8a5f7c88990db4e.png",
+    "static/media/Porsche-PNG-Image-51036.png": "/booking/static/media/Porsche-PNG-Image-51036.a675a43e5ab85fd9f9e2.png",
+    "static/media/2017-kia-sorento-sx-at-4wd-suv-angular-front.png": "/booking/static/media/2017-kia-sorento-sx-at-4wd-suv-angular-front.3f3873384673f085ada2.png",
+    "static/media/honda-auto-repair-800x546-1.png": "/booking/static/media/honda-auto-repair-800x546-1.2ad414ac7ec6e276c9c6.png",
+    "static/media/bmw-6-series-gt-03-800x546-1.png": "/booking/static/media/bmw-6-series-gt-03-800x546-1.c42619c9dc9267c50654.png",
+    "static/media/Tata-Tiago-Tata-Motors-Car-800x546-1.png": "/booking/static/media/Tata-Tiago-Tata-Motors-Car-800x546-1.75a9613528e33c17467e.png",
+    "static/media/big_wheels.png": "/booking/static/media/big_wheels.0d0f5bc560476994bed1.png",
+    "static/media/xv20i-656x320-1-800x546-1-1.png": "/booking/static/media/xv20i-656x320-1-800x546-1-1.2f285e0bbc5c6e9a1fdb.png",
+    "static/media/GLC.png": "/booking/static/media/GLC.331b60b05822730d19a7.png",
+    "static/media/Car-Banner-2.jpg": "/booking/static/media/Car-Banner-2.6e03598653b715078bdc.jpg",
+    "static/media/download.png": "/booking/static/media/download.1a143ef0a84832a9e75e.png",
+    "static/media/mercedes.jpg": "/booking/static/media/mercedes.5835f61a1152accaff90.jpg",
+    "static/media/2-SB-How-work-1.png": "/booking/static/media/2-SB-How-work-1.6f577d227d0bc6924344.png",
+    "static/media/433-1_thumb-358x274-1.png": "/booking/static/media/433-1_thumb-358x274-1.172c26cb10ef84a88f53.png",
+    "static/media/acura-1.jpg": "/booking/static/media/acura-1.f5f0ede7ccc9c135ba30.jpg",
+    "static/media/mazda-1.jpg": "/booking/static/media/mazda-1.3bc6179c2c5fec4edbc8.jpg",
+    "static/media/corolla-1.jpg": "/booking/static/media/corolla-1.6f1186e868ece32a186f.jpg",
+    "static/media/corolla-2.jpg": "/booking/static/media/corolla-2.0ba19d5241f4bdb3957d.jpg",
+    "static/media/Dallas-car-locksmith-prokeys-2.png": "/booking/static/media/Dallas-car-locksmith-prokeys-2.b29e5230f04a728edb81.png",
+    "static/media/mclaren-1.jpg": "/booking/static/media/mclaren-1.21b0260749765f0b3d0c.jpg",
+    "static/media/uploading-dial.gif": "/booking/static/media/uploading-dial.222e21e242dae79ec6dc.gif",
+    "index.html": "/booking/index.html",
+    "main.523467a3.css.map": "/booking/static/css/main.523467a3.css.map",
+    "main.9299fc9d.js.map": "/booking/static/js/main.9299fc9d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.523467a3.css",
+    "static/js/main.9299fc9d.js"
+  ]
+}
