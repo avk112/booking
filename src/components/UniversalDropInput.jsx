@@ -79,7 +79,7 @@ const UniversalDropInput = ({defaultSelectedValue="", title="", name="", type="t
                     <img src={downArrow}/>
                 </div>
                 <div className="universalForm__item__selectBlock__dropdownBlock"
-                     style={{maxHeight: isVisible ? "40em" : 0}}>
+                     style={{maxHeight: isVisible ? "70em" : 0}}>
                     <input
                         type={type}
                         name={name}
