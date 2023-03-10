@@ -1,0 +1,331 @@
+.booking {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    width: 30%;
+    height: inherit;
+    border-left: 1px solid #e2e8f0;
+    box-sizing: border-box;
+    padding: 0 0 0 2em;
+    background-color: white;
+    overflow-y: auto;
+
+}
+.booking::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+.booking::-webkit-scrollbar-track {
+    background-color: #faebc6;
+}
+.booking::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(253, 249, 249, 0.75);
+    background-color: #ff992e;
+}
+
+.booking p {
+    font-size: 1.13em;
+    font-weight: 400;
+    margin: 1em 0;
+    line-height: 1.2;
+}
+
+.booking label {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.booking__title {
+    font-size: 1.85em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    color: #2d3748;
+}
+
+
+
+.dateItem {
+    padding: 0;
+    margin: 0 0 2em 0;
+}
+
+.dateRangePicker {
+    padding: 1.6% 5%;
+}
+
+.dropItem {
+    padding: 0 0 3em 0;
+    margin: 0 0 2em 0;
+}
+
+
+.dropItem__subtitle {
+    font-size: 1em;
+    text-transform: none;
+    color: #4a5568;
+    margin:  0 0 0.5em 0;
+}
+
+.dropItem__selectBlock__titleBlock__title {
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
+.booking__pricesBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 0 2em 0;
+}
+
+.booking__pricesBlock__headerBlock {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+    padding: 3% 5%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking__pricesBlock__headerBlock__title {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.booking__pricesBlock__headerBlock img {
+    width: 5%;
+    object-fit: cover;
+}
+
+.booking__pricesBlock__dropdownPriceList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.3s linear;
+    background-color: #f8f7f7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0 5%;
+    overflow-y: hidden;
+
+}
+
+.booking__pricesBlock__dropdownPriceList p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2;
+    margin: 0 0 1em 0;
+}
+
+.booking__pricesBlock__dropdownPriceList__title {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 1em 0 0.2em 0;
+    color: #2d3748;
+}
+
+.booking__pricesBlock__dropdownPriceList__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.booking__pricesBlock__dropdownPriceList__list li {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.booking__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.booking__form__checkboxBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+.booking__form__checkboxBlock__title {
+    font-size: 1em;
+    line-height: 1.2;
+    text-transform: none;
+    color: #4a5568;
+    margin: 0 0 0.5em 0;
+}
+
+.booking__form__checkboxBlock__options {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    grid-gap: 0.5em;
+    grid-auto-flow: dense;
+    width: 100%;
+}
+
+.booking__form__checkboxBlock__options__item{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.booking__form__checkboxBlock__options__item label {
+    position: relative;
+    width: 2.4em;
+    height: 1.3em;
+}
+
+.booking__form__checkboxBlock__options label input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.booking__form__checkboxBlock__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.3s;
+    border-radius: 2.4em;
+}
+
+.booking__form__checkboxBlock__slider:before {
+    position: absolute;
+    content: "";
+    height: 1.2em;
+    width: 1.2em;
+    left: 0;
+    bottom: 50%;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+    transform: translate(0, 50%);
+}
+
+.booking__form__checkboxBlock__options label input:checked + .booking__form__checkboxBlock__slider {
+    background-color: #f88711;
+}
+
+.booking__form__checkboxBlock__options label input:focus + .booking__form__checkboxBlock__slider {
+    box-shadow: 0 0 1px #f88711;
+}
+
+.booking__form__checkboxBlock__options label input:checked + .booking__form__checkboxBlock__slider:before {
+    transform: translate(1.1em, 50%);
+}
+
+.booking__form__checkboxBlock__options__item__attributes{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 83%;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+    .booking {
+        width: 75%;
+        font-size: calc(1em*3);
+
+    }
+
+    .booking p {
+        font-size: calc(1em*1.3);
+        margin: 6% 0;
+    }
+
+    .booking__pricesBlock {
+        margin: 0 0 8% 0;
+    }
+
+    .booking__pricesBlock__headerBlock__title {
+        font-size: calc(1em*1.3);
+    }
+
+    .booking__pricesBlock__dropdownPriceList {
+        font-size: calc(1em*1.3);
+    }
+
+    .booking__pricesBlock__dropdownPriceList p {
+        font-size: 1em;
+        margin: 0 0 1em 0;
+    }
+
+    .dropItem {
+        /*font-size: calc(1em/3);*/
+        padding: 0 0 1em 0;
+        margin: 0 0 4em 0;
+    }
+
+    .dropItem input {
+        font-size: calc(1em*1.3);
+    }
+
+    .dropItem__subtitle {
+        font-size: calc(1em*1.3);
+    }
+
+    .dropItem__selectBlock__titleBlock__title {
+        margin: 0.2em 0;
+        font-size: calc(1em*1.3);
+    }
+
+    .booking__form__checkboxBlock__title {
+        font-size: calc(1em*1.3);
+    }
+
+    .booking__form__checkboxBlock__options {
+        grid-gap: calc(0.5em*1.4);
+    }
+
+    .booking__form__totalPrice {
+        font-size: calc(1em*1.3);
+        line-height: 1.2;
+        margin: 0 0 5% 0;
+    }
+
+    .booking__form__bookingBtn {
+        font-size: calc(1em*1.3);
+        width: 100%;
+    }
+
+    .booking__acceptationForm {
+        font-size: 0.6em;
+    }
+
+
+
+
+
+
+}

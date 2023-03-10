@@ -1,0 +1,78 @@
+.featuresAndReviews {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.featuresAndReviews__title {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0 0 4% 0;
+    margin: 4% 0;
+}
+
+.featuresAndReviews__title li {
+    font-size: 1.58em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin: 0 2em 0 0;
+}
+
+.featuresAndReviews__featuresBlock {
+    position: relative;
+    column-count: 4;
+    column-width: 100px;
+    animation: appearence 0.3s linear;
+}
+@keyframes appearence {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.featuresAndReviews__featuresBlock__item {
+    display: flex;
+    align-items: center;
+    font-size: 1.135em;
+    line-height: 1.2;
+    margin: 0 0 1em 0;
+}
+
+.featuresAndReviews__featuresBlock__item img {
+    width: 10%;
+    object-fit: cover;
+    margin: 0 1em 0 0;
+}
+
+
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+    .featuresAndReviews__title {
+        margin: 8% 0 4% 0;
+    }
+
+    .featuresAndReviews__title li {
+        font-size: calc(1.58em*3);
+        line-height: 1.2;
+        margin: 0 2em 0 0;
+    }
+
+    .featuresAndReviews__featuresBlock__item {
+        font-size: calc(1.135em*3);
+    }
+}
+
+
+

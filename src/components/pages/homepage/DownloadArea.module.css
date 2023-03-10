@@ -1,0 +1,142 @@
+.downloadArea {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.downloadArea__bannerBlock {
+    position: relative;
+    width: 46.8%;
+}
+
+.downloadArea__bannerBlock img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.downloadArea__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.downloadArea__info__title {
+    font-size: 2.85em;
+    line-height: 1.6;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 5.9% 0;
+}
+
+.downloadArea__info p {
+    font-size: 1.17em;
+    line-height: 1.7;
+    font-weight: 400;
+    margin: 0;
+}
+
+.downloadArea__info__form {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 13% 0;
+}
+
+.downloadArea__info__form input {
+    font-size: 1.6em;
+    line-height: 1.2;
+    width: 61%;
+    box-sizing: border-box;
+    padding: 4% 5%;
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-shadow: 0 0 100px 10px rgb(16 66 97 / 15%);
+    color: #2d3748;
+}
+
+.downloadArea__info__form input:focus {
+    outline: 1px solid #ff992e;
+}
+
+.downloadArea__info__form button {
+    background-color: #ff992e;
+    color: white;
+    padding: 4.7% 10%;
+}
+
+.downloadArea__info__form button:hover {
+    background-color: white;
+    color: #ff992e;
+    outline: 1px solid #ff992e;
+}
+
+.downloadArea__info__subtitle {
+    font-size: 1.6em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3;
+    margin: 0 0 11% 0;
+}
+
+.downloadArea__info__linksBlock {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.downloadArea__info__linksBlock img {
+    width: 47%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+    .downloadArea__bannerBlock {
+        position: relative;
+        width: 49.8%;
+    }
+
+    .downloadArea__info__title {
+        font-size: calc(2.85em*1.5);
+    }
+
+    .downloadArea__info p {
+        font-size: calc(1.17em*2.5);
+    }
+
+    .downloadArea__info__form {
+        flex-direction: column;
+    }
+
+    .downloadArea__info__form input {
+        font-size: calc(1.6em*2);
+        width: 100%;
+        margin: 0 0 5% 0;
+    }
+
+    .downloadArea__info__form button {
+        width: 100%;
+    }
+
+    .downloadArea__info__subtitle {
+        font-size: calc(1.6em*2);
+    }
+
+    .downloadArea__info__linksBlock {
+        padding: 0;
+    }
+}

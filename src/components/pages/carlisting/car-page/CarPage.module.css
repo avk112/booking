@@ -1,0 +1,44 @@
+.carPage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.carPage__main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 0 5% 0;
+}
+
+.carPage__main__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+}
+
+
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+    .carPage__main {
+        flex-direction: column;
+        gap: 4em;
+        margin: 0 0 10% 0;
+    }
+
+    .carPage__main__bookingBtn {
+        width: 100%;
+        font-size: calc(1.5em*3);
+    }
+
+    .carPage__main__info {
+        width: 100%;
+    }
+}
+

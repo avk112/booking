@@ -1,0 +1,188 @@
+@keyframes appearence {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.appear {
+    animation: appearence 1s ease;
+}
+
+.previewArea {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.previewArea__previewBlock {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 40.5em;
+    justify-content: center;
+    align-items: center;
+    background: #fff6f0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+
+.previewArea__previewBlock img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.previewArea__interactiveBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.previewArea__interactiveBlock__headers {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 0 10% 0;
+}
+
+.previewArea__interactiveBlock__headers__title {
+    font-size: 1.29em;
+    font-weight: 500;
+    line-height: 1.2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0;
+    transition: all 0.3s linear;
+}
+
+
+.previewArea__interactiveBlock__row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 40.5em;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+.previewArea__interactiveBlock__row::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+.previewArea__interactiveBlock__row::-webkit-scrollbar-track {
+    background-color: #faebc6;
+}
+.previewArea__interactiveBlock__row::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(253, 249, 249, 0.75);
+    background-color: #ff992e;
+}
+.previewArea__interactiveBlock__row:hover {
+    overflow-y: scroll;
+}
+
+
+.previewArea__interactiveBlock__row__item {
+    position: relative;
+    left: 2.14em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35em;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0.79em 0 0.79em 0;
+    transition: all 0.3s ease;
+}
+
+
+.previewArea__interactiveBlock__row__item:hover {
+    box-shadow: 0 0 22px rgb(16 66 97 / 10%);
+    left: 0.5em;
+}
+
+.previewArea__interactiveBlock__row__item img {
+    width: 35%;
+    object-fit: cover;
+}
+
+.previewArea__interactiveBlock__row__item__info {
+    position: relative;
+    width: 61%;
+    padding: 5%;
+}
+
+.previewArea__interactiveBlock__row__item__info__title {
+    font-size: 1.29em;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #2d3748;
+    margin: 0 0 5% 0;
+}
+
+.previewArea__interactiveBlock__row__item__info p {
+    font-size: 1.14em;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0 0 5% 0;
+}
+
+.previewArea__interactiveBlock__row__item__info__price {
+    font-size: 1.58em;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin: 0;
+    color: #2d3748;
+}
+
+
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+    .previewArea__previewBlock {
+        width: 40%;
+        height: 32.78em;
+    }
+
+    .previewArea__interactiveBlock {
+        width: 58%;
+    }
+
+    .previewArea__interactiveBlock__headers {
+        width: 100%;
+    }
+
+    .previewArea__interactiveBlock__headers__title {
+        font-size: calc(1.29em*2.5);
+    }
+
+    .previewArea__interactiveBlock__row {
+        height: calc(40.5em*1.55);
+    }
+
+    .previewArea__interactiveBlock__row__item {
+        width: 95%;
+    }
+
+    .previewArea__interactiveBlock__row__item__info__title {
+        font-size: calc(1.29em*2.5);
+    }
+
+    .previewArea__interactiveBlock__row__item__info p {
+        font-size: calc(1.14em*2.5);
+    }
+
+    .previewArea__interactiveBlock__row__item__info__price {
+        font-size: calc(1.58em*2);
+    }
+}

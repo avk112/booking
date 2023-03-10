@@ -1,0 +1,81 @@
+.banner {
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: url("../../../image/Car-Banner-2.jpg") top center no-repeat;
+    background-size: cover;
+    padding: 12.5% 8% 11% 8%;
+    box-sizing: border-box;
+}
+
+.banner__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 44.5%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 13px 30px -3px rgb(16 66 97 / 8%);
+    box-sizing: border-box;
+    padding: 4.5%;
+    z-index: 0;
+}
+
+.banner__form__title {
+    font-size: 2.15em;
+    color: #2d3748;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0 0 3.8% 0;
+}
+
+.banner__form p {
+    font-size: 1em;
+    font-weight: 450;
+    line-height: 1.7em;
+    margin: 0 0 12% 0;
+    color: #718096;
+}
+
+
+.banner__form__button {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.14em;
+    font-weight: 500;
+    background: #ff992e;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    padding: 4.6%;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {    .banner {
+        padding: 20% 8% 11% 8%;
+    }
+
+    .banner__form {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .banner__form__title {
+        font-size: calc(2.15em*3);
+    }
+
+    .banner__form p {
+        font-size: calc(1em*3);
+    }
+
+
+    .banner__form__button {
+        font-size: calc(1.14em*3);
+        padding: 4.6%;
+    }
+}

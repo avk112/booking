@@ -1,0 +1,126 @@
+.relatedCars {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.relatedCars__title {
+    font-size: 1.85em;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #2d3748;
+    margin: 0 0 2% 0;
+}
+
+.relatedCars__row {
+    position: relative;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-auto-flow: dense;
+    width: 100%;
+}
+
+.relatedCars__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /*width: 32%;*/
+    box-sizing: border-box;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0 2%;
+    transition: all 0.3s linear;
+    text-decoration: none;
+    color: #777777;
+}
+
+.relatedCars__item:hover {
+    border-color: transparent;
+    box-shadow: 0 0 22px rgb(52 61 72 / 10%);
+}
+
+
+.relatedCars__item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.relatedCars__item__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.relatedCars__item__info__title {
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #2d3748;
+    margin: 0;
+    text-align: center;
+}
+
+.relatedCars__item__info__properties {
+    width: 90%;
+    list-style: none;
+    /*padding: 0;*/
+    font-size: 1.13em;
+    font-weight: 400;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 4% 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.relatedCars__item__info__properties li {
+    margin: 1% 0;
+}
+
+.relatedCars__item__info__price {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    padding: 4% 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+    .relatedCars__title {
+        font-size: calc(1.85em*3);
+    }
+
+    .relatedCars__row {
+        grid-gap: 4em;
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+
+    .relatedCars__item__info {
+        font-size: calc(1em*3);
+    }
+
+    .relatedCars__item__info__properties li {
+        line-height: 1.2;
+        margin: 3% 0;
+        font-size: 1.13em;
+    }
+
+    .relatedCars__item__info__price {
+        font-size: 1.13em;
+    }
+}

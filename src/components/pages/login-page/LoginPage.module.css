@@ -1,0 +1,68 @@
+.loginPage {
+    position: relative;
+    width: 100%;
+}
+
+.loginPage__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5%;
+    border-radius: 5px;
+    border: 1px solid #e3e2e2;
+    gap: 2em;
+}
+
+.loginPage__form p {
+    font-size: 1.135em;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+}
+
+.loginPage__form input {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3%;
+    border: 1px solid #e3e2e2;
+    border-radius: 5px;
+    font-size: 1.135em;
+}
+
+.loginPage__form input:focus-visible {
+    outline: 1px solid #f88711;
+    border: 1px solid white;
+}
+
+.loginPage__form__link {
+    color: #f88711;
+    cursor: pointer;
+}
+
+
+
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+    .loginPage__form {
+        width: 100%;
+        gap: 4em;
+    }
+
+    .loginPage__form p {
+        font-size: calc(1.135em*3);
+    }
+
+    .loginPage__form input {
+        font-size: calc(1.135em*3);
+    }
+
+    .loginPage__form span {
+        font-size: calc(1.135em*3);
+    }
+}

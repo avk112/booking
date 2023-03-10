@@ -1,0 +1,26 @@
+
+.dividiveBlock {
+    position: relative;
+    width: 100%;
+    padding: 20% 0;
+}
+
+.newPage {
+    position: relative;
+    width: 100%;
+    background-color: #fffaf7;
+}
+
+.newPage__main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5%;
+    z-index: 5;
+}
+
+

@@ -1,0 +1,344 @@
+.cars {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.cars__topBlock {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+.cars__topBlock__leftBlock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    gap: 2em;
+}
+
+.cars__topBlock__leftBlock p {
+    font-size: 1.14em;
+    margin: 0;
+}
+
+.cars__topBlock__leftBlock__imgBlock {
+    position: relative;
+    display: none;
+    width: 8%;
+    cursor: pointer;
+}
+
+.cars__topBlock__leftBlock__imgBlock img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cars__topBlock__sortingBlock {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.cars__topBlock__sortingBlock select {
+    position: relative;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid #e3e2e2;
+    color: #777777;
+    padding: 6% 2%;
+    font-size: 1.14em;
+}
+
+
+.cars__topBlock__sortingBlock select:focus-visible {
+    outline: 1px solid #f88711;
+}
+
+.cars__topBlock__sortingBlock img{
+    width: 8%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.cars__row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-gap: 2em;
+    grid-auto-flow: dense;
+    margin: 0 0 2em 0;
+}
+
+.table {
+    grid-template-columns: repeat(2, minmax(40%, 1fr));
+}
+
+.list {
+    grid-template-columns: repeat(1, minmax(40%, 1fr));
+}
+
+.cars__row__item {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #e3e2e2;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.table__item {
+    flex-direction: column;
+    padding: 8% 8%;
+}
+
+.list__item {
+    flex-direction: row;
+    padding: 3%;
+}
+
+.cars__row__item:hover {
+    box-shadow: 0 0 22px rgb(51 60 71 / 10%);
+}
+
+
+
+.cars__row__item__imgBlock {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.table__imgBlock {
+    width: 100%;
+}
+
+.list__imgBlock {
+    width: 43%;
+}
+
+.cars__row__item__imgBlock img {
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(0.8);
+    transition: all 0.3s linear;
+}
+
+.cars__row__item:hover .cars__row__item__imgBlock img{
+    filter: brightness(1);
+}
+
+.cars__row__item__infoBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.table__infoBlock {
+    width: 100%;
+}
+
+.list__infoBlock {
+    width: 55%;
+}
+
+.cars__row__item__infoBlock__title {
+    font-weight: 600;
+    text-align: left;
+    margin: 0;
+}
+
+.cars__row__item__infoBlock__title a {
+    text-decoration: #f88711 underline 1px;
+    color: #2d3748;
+    transition: all 0.2s linear;
+}
+.cars__row__item__infoBlock__title a:hover {
+    color: #f88711;
+}
+
+.table__infoBlock .cars__row__item__infoBlock__title{
+    font-size: 1.14em;
+}
+
+.list__infoBlock .cars__row__item__infoBlock__title{
+    font-size: 1.43em;
+}
+.cars__row__item__infoBlock__rateAndPrice {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7% 0;
+    border-bottom: 1px solid #e3e2e2;
+}
+
+.cars__row__item__infoBlock__rateAndPrice__rating {
+    width: 6em;
+    margin: 0;
+}
+
+.cars__row__item__infoBlock__rateAndPrice__price {
+    font-size: 1.14em;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+.cars__row__item__infoBlock__attributes {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 7% 0;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.cars__row__item__infoBlock__attributes li{
+    box-sizing: border-box;
+    font-size: 1.14em;
+    font-weight: 400;
+}
+
+.cars__row__item__infoBlock__attributes li span:first-child {
+    margin: 0 0.8em 0 0;
+}
+
+.cars__row__item__infoBlock__features {
+    position: relative;
+    column-count: 3;
+    column-width: 100px;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 1em;
+}
+
+.cars__row__item__infoBlock__features li img {
+    width: 1em;
+    object-fit: cover;
+    margin: 0 0.5em 0 0;
+}
+
+.cars__row__item__infoBlock button {
+    color:white;
+    background-color: #f88711;
+    width: 35%;
+}
+
+.cars__row__item__infoBlock button:hover {
+    color:#f88711;
+    background-color: white;
+    outline: 1px solid #f88711;
+}
+
+
+
+
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+    .cars {
+        width: 100%;
+    }
+
+    .cars__topBlock__leftBlock {
+        width: 25%;
+        justify-content: space-between;
+    }
+
+    .cars__topBlock__leftBlock p {
+        font-size: calc(1.14em*3);
+    }
+
+    .cars__topBlock__leftBlock__imgBlock {
+        display: flex;
+        width: 26%;
+    }
+
+    .cars__topBlock__sortingBlock {
+        width: 65%;
+    }
+
+    .cars__topBlock__sortingBlock select {
+        padding: 6% 2%;
+        font-size: calc(1.14em*3);
+    }
+
+    .cars__topBlock__sortingBlock img {
+        width: 10%;
+    }
+
+    .table__infoBlock .cars__row__item__infoBlock__title {
+        font-size: calc(1.14em*3);
+        line-height: 1.2;
+    }
+
+    .list__infoBlock .cars__row__item__infoBlock__title {
+        font-size: calc(1.43em*3);
+        line-height: 1.2;
+    }
+
+    .cars__row__item__infoBlock__rateAndPrice {
+       flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2em;
+    }
+
+    .cars__row__item__infoBlock__rateAndPrice__rating {
+        width: calc(6em*3);
+    }
+
+    .cars__row__item__infoBlock__rateAndPrice__price {
+        font-size: calc(1.14em*3);
+    }
+
+    .cars__row__item__infoBlock__attributes {
+        margin: 7% 0 12% 0;
+    }
+
+    .cars__row__item__infoBlock__attributes li {
+        font-size: calc(1.14em*3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .cars__row__item__infoBlock__attributes li span:first-child {
+        margin: 0;
+    }
+
+    .cars__row__item__infoBlock__features {
+        font-size: calc(1.13em*3);
+        margin: 0 0 12% 0;
+        line-height: 1.2;
+    }
+
+
+    .cars__row__item__infoBlock button {
+        width: 100%;
+    }
+}

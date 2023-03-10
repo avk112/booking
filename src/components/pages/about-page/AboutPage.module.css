@@ -1,0 +1,263 @@
+.aboutUs {
+    gap: 3em;
+}
+
+.aboutUs__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.aboutUs__item__titleBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
+
+.aboutUs__item__titleBlock__title {
+    font-size: 2.15em;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #2d3748;
+    margin: 0;
+}
+
+.aboutUs__item__titleBlock__title__dot {
+    font-size: 1.2em;
+    color: #f88711;
+    line-height: 0.5;
+}
+
+.aboutUs__item__descriptionBlock {
+    position: relative;
+    width: 65%;
+}
+
+.aboutUs__item__descriptionBlock__title {
+    font-size: 1.13em;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #2d3748;
+    margin: 0 0 1em 0;
+}
+
+.aboutUs__item__descriptionBlock p {
+    font-size: 1.13em;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.aboutUs__item__infoBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 1.5em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutUs__item__infoBlock li {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.13em;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    gap: 1em;
+}
+
+.aboutUs__item__infoBlock li img {
+    width: 1em;
+    object-fit: cover;
+}
+
+.aboutUs__item__teamBlock {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.aboutUs__item__teamBlock__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    width: 31%;
+    border: 1px solid #e2e8f0;
+    box-sizing: border-box;
+    padding: 0 0 1em 0;
+}
+
+.aboutUs__item__teamBlock__item__topBlock {
+    position: relative;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom: 1px solid #e2e8f0;
+    background-color: #ececec;
+}
+.aboutUs__item__teamBlock__item__topBlock img {
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.5s linear;
+    z-index: 5;
+}
+
+.aboutUs__item__teamBlock__item__topBlock:hover  img {
+   transform: translate(0, -100%);
+}
+
+.aboutUs__item__teamBlock__item__topBlock__textBlock {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: #222222;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 0.5em;
+    z-index: 2;
+}
+
+.aboutUs__item__teamBlock__item__topBlock__textBlock__title {
+    font-size: 1.13em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+    color: #222222;
+}
+
+.aboutUs__item__teamBlock__item__title {
+    font-size: 1.13em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+    color: #222222;
+}
+
+.aboutUs__item__teamBlock__item__subtitle {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.aboutUs__item__teamBlock__item__social {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutUs__item__teamBlock__item__social li {
+    position: relative;
+    display: flex;
+    width: 8%;
+}
+
+.aboutUs__item__teamBlock__item__social li img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+    .aboutUs {
+        gap: calc(3em*3);
+    }
+
+    .aboutUs__item__titleBlock {
+        width: 30%;
+    }
+
+    .aboutUs__item__titleBlock__title {
+        font-size: calc(2.15em*2.5);
+    }
+
+    .aboutUs__item__titleBlock__title__dot {
+        font-size: calc(1.2em*2.5);
+    }
+
+    .aboutUs__item__descriptionBlock {
+        width: 65%;
+    }
+
+    .aboutUs__item__descriptionBlock__title {
+        font-size: calc(1.13em*3);
+    }
+
+    .aboutUs__item__descriptionBlock p {
+        font-size: calc(1.13em*3);
+    }
+
+    .aboutUs__item__infoBlock {
+        gap: calc(1.5em*3);
+    }
+
+    .aboutUs__item__infoBlock li {
+        font-size: calc(1.13em*3);
+    }
+
+    .aboutUs__item__infoBlock li img {
+        width: 1em;
+    }
+
+    .aboutUs__item__teamBlock {
+        flex-direction: column;
+        gap: calc(1.13em*3);
+    }
+
+    .aboutUs__item__teamBlock__item {
+        gap: calc(1em*3);
+        width: 100%;
+        padding: 0 0 3em 0;
+    }
+
+    .aboutUs__item__teamBlock__item__topBlock__textBlock {
+        gap: 0.4em;
+        font-size: calc(1.1em*3);
+    }
+
+    .aboutUs__item__teamBlock__item__title {
+        font-size: calc(1.13em*4);
+    }
+
+    .aboutUs__item__teamBlock__item__subtitle {
+        font-size: calc(1em*4);
+    }
+
+    .aboutUs__item__teamBlock__item__social {
+        gap: calc(1em*5);
+    }
+
+    .aboutUs__item__teamBlock__item__social li {
+        width: 12%;
+    }
+
+}
+
+
