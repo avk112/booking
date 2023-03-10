@@ -8,7 +8,7 @@ import DateRangePicker from "@wojtekmaj/react-daterange-picker/dist/entry.nostyl
 import HiddenScreen from "../../../HiddenScreen";
 import FormBookingConfirm from "../../../FormBookingConfirm";
 import {useDispatch, useSelector} from "react-redux";
-import {getAll, setData} from "../../../../redux/quickSearchSlice";
+import {dropData, getAll, setData} from "../../../../redux/quickSearchSlice";
 import {Link} from "react-router-dom";
 import {getUser} from "../../../../redux/userSlice";
 import FormAcceptation from "../../../FormAcceptation";
@@ -87,12 +87,17 @@ const BookingArea = ({car,hidden=false}) => {
         })
     }
 
-    const changeDate = (value)=> {
-        const newValue = value ? value.map(item=> item.getTime()) : value;
-        dispatch(setData({key:"date", data:newValue}))
+    const changeQickSearchField = (value, dropAll=false)=> {
+        if (dropAll) {
+            dispatch(dropData());
+        } else {
+            const newValue = value ? value.map(item => item.getTime()) : value;
+            dispatch(setData({key: "date", data: newValue}))
+        }
     }
 
-    const handleDatePicker = (value)=> {
+
+    const handleDatePicker = (value, dropAll=false)=> {
         let totalPrice=0;
         let totalBookedDays=0;
         if(value){
@@ -119,7 +124,7 @@ const BookingArea = ({car,hidden=false}) => {
                }
            }}
 
-       changeDate(value);
+       changeQickSearchField(value, dropAll);
        setBookedDays(totalBookedDays);
        setBookingPrice(totalPrice);
     };
@@ -128,7 +133,7 @@ const BookingArea = ({car,hidden=false}) => {
         const newDate = dropDate ? undefined : dateValue;
         setResetInputs(Date.now());
         handleCheckboxes(undefined, true);
-        handleDatePicker(newDate);
+        handleDatePicker(newDate, dropDate);
         setDestination(new Destinations());
     }
 

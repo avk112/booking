@@ -1,5 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
+
 const initialState = {
     startCity: "",
     finishCity: "",
@@ -12,13 +13,18 @@ const quickSearchSlice = createSlice({
     reducers: {
         setData: {
             reducer(state, action){
-                return {...state, [action.payload.key]: action.payload.data}
+                return {...state, [action.payload.key]: action.payload.data};
+            }
+        },
+        dropData:{
+            reducer(state){
+                return {startCity: "", finishCity: "", date:  null};
             }
         }
     }
 });
 
-export const {setData}=quickSearchSlice.actions;
+export const {setData, dropData}=quickSearchSlice.actions;
 export const getAll = (state)=>state.quickSearch;
 
 export default quickSearchSlice.reducer;

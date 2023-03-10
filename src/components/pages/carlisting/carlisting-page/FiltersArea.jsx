@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from "./FiltersArea.module.css";
 import QuickSearch from "../../../QuickSearch";
 
 const FiltersArea = ({filterInputs, handleFilters, handleClearFilters}) => {
+    const [resetQuickSearch, setResetQuickSearch] = useState(Date.now());
+
+    const dropQuickSearchAndFilters = ()=> {
+        handleClearFilters();
+        setResetQuickSearch(Date.now());
+    }
+
     const filtersBlock = filterInputs.map(item=>{
         if(item.name!=="city" && item.name!=="date" ) {
             const inputsBlock = item.type === "text"
@@ -51,13 +58,14 @@ const FiltersArea = ({filterInputs, handleFilters, handleClearFilters}) => {
                     Search & Filter
                 </h3>
                 <span className={classes.filter__headerBlock__clear}
-                      onClick={handleClearFilters}>
+                      onClick={dropQuickSearchAndFilters}>
                             Clear All
                         </span>
             </div>
             <form className={classes.filter__form}>
                 <QuickSearch
                     handleChange={handleFilters}
+                    resetInputs={resetQuickSearch}
                 />
                 {filtersBlock}
             </form>

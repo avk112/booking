@@ -6,8 +6,12 @@ import sortingTypes from "../../../../data/sortingTypes";
 import FiltersArea from "./FiltersArea";
 import CarsArea from "./CarsArea";
 import HiddenScreen from "../../../HiddenScreen";
+import {useDispatch} from "react-redux";
+import {dropData} from "../../../../redux/quickSearchSlice";
 
 const CarListingPage = () => {
+    const dispatch = useDispatch();
+
     const limit = 6;
     const [isVisibleFilterArea, setIsVisibleFilterArea] = useState(false);
     const [isVisibleHiddenScreen, setIsVisibleHiddenScreen] = useState(false);
@@ -16,6 +20,7 @@ const CarListingPage = () => {
     const {handleInputs, clearAll, filterInputs, filteredArray} = useFilter(["search","features","class","doors", "fuel","gearBox","seat", "city", "date"], [...carsData], typeOfSorting.fieldName);
 
     const handleClearFilters = ()=> {
+        dispatch(dropData());
         clearAll();
         setLoadLimit(limit);
     }
