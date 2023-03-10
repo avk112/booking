@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/booking/static/css/main.523467a3.css",
-    "main.js": "/booking/static/js/main.9299fc9d.js",
+    "main.css": "/booking/static/css/main.b8815520.css",
+    "main.js": "/booking/static/js/main.27ef6cdd.js",
     "static/media/mazda.jpg": "/booking/static/media/mazda.9a453aaa635ba0aead4d.jpg",
     "static/media/acura.jpg": "/booking/static/media/acura.2c838aa84f84e042e611.jpg",
     "static/media/volvo.jpg": "/booking/static/media/volvo.aac3e377391476ea1522.jpg",
@@ -31,11 +31,11 @@
     "static/media/mclaren-1.jpg": "/booking/static/media/mclaren-1.21b0260749765f0b3d0c.jpg",
     "static/media/uploading-dial.gif": "/booking/static/media/uploading-dial.222e21e242dae79ec6dc.gif",
     "index.html": "/booking/index.html",
-    "main.523467a3.css.map": "/booking/static/css/main.523467a3.css.map",
-    "main.9299fc9d.js.map": "/booking/static/js/main.9299fc9d.js.map"
+    "main.b8815520.css.map": "/booking/static/css/main.b8815520.css.map",
+    "main.27ef6cdd.js.map": "/booking/static/js/main.27ef6cdd.js.map"
   },
   "entrypoints": [
-    "static/css/main.523467a3.css",
-    "static/js/main.9299fc9d.js"
+    "static/css/main.b8815520.css",
+    "static/js/main.27ef6cdd.js"
   ]
 }
