@@ -233,7 +233,7 @@ html, body {
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
-  background-color: #76baff;
+  background: radial-gradient(ellipse at center, #FFC989 0%, #FFB979 72%, #FFB84C 100%);
 
 }
 .universal-loader__dot {
@@ -248,17 +248,17 @@ html, body {
 
 .universal-loader__dot:nth-child(1) {
   animation: rolling 2s linear infinite;
-  background-color: chartreuse;
+  background: radial-gradient(ellipse at center, #FF9B68 0%, #FF7132 72%, #FF5428 100%);
 }
 
 .universal-loader__dot:nth-child(2) {
   animation: rolling 2s linear infinite 0.5s;
-  background-color: #f88711;
+  background: radial-gradient(ellipse at center, #7AFF6D 0%, #37FF46 72%, #41FF2D 100%);
 }
 
 .universal-loader__dot:nth-child(3) {
   animation: rolling 2s linear infinite 1s;
-  background-color: red;
+  background: radial-gradient(ellipse at center, #756FFF 0%, #375EFF 72%, #352DFF 100%);
 }
 
 .universal-breadcrumbs {

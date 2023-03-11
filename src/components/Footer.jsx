@@ -5,19 +5,26 @@ import logo from "../image/logo-yellow.png";
 import socialsData from "../data/socials";
 import FormAcceptation from "./FormAcceptation";
 import HiddenScreen from "./HiddenScreen";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {getAllNavs} from "../redux/navagationsSlice";
+import {breakUser} from "../redux/userSlice";
 
 const Footer = () => {
+    const dispatch = useDispatch();
+
     const activeStyle={color: "#ff992e"};
     const passiveStyle = {undefined};
     const [input, setInput] = useState("");
     const [isHiddenScreen, setIsHiddenScreen] = useState(false);
 
+    const logout=()=> {
+        dispatch(breakUser())
+    };
+
     const handleInput = (e)=> {
         const value = e.target.value;
         setInput(value);
-    }
+    };
 
     const sendForm = (e)=> {
         e.preventDefault();
@@ -41,7 +48,10 @@ const Footer = () => {
             </li>
             :
             <li key={item.id}>
-                <NavLink to={item.url} style={passiveStyle}>
+                <NavLink to={item.url}
+                         style={passiveStyle}
+                         onClick={logout}
+                >
                     {item.name}
                 </NavLink>
             </li>

@@ -58,8 +58,9 @@ const Header = () => {
         if(item.type==="logout" && user?.username){
             return <li key={item.id}>
                         <NavLink to={item.url}
-                                 style={passiveStyle} onClick={logout}
-                                 onClick={isVisibleHiddenScreen && handleHiddenScreen}                        >
+                                 style={passiveStyle}
+                                 onClick={()=>{logout();isVisibleHiddenScreen && handleHiddenScreen()}}
+                        >
                             {item.name}
                         </NavLink>
                     </li>

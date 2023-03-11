@@ -6,7 +6,7 @@ const Loader = () => {
             <div className="universal-loader__dot"> </div>
             <div className="universal-loader__dot"> </div>
             <div className="universal-loader__dot"> </div>
-            <h3>Loading...</h3>
+            {/*<h3 className="universal-loader">Loading...</h3>*/}
         </div>
     );
 };
