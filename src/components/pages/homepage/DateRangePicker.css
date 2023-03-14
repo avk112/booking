@@ -82,7 +82,10 @@
   stroke: #6d6d6d;
 }
 .react-daterange-picker__button svg {
-  display: inherit;
+  font-size: 1.025vw;;
+  display: flex;
+  width: 1.37em;
+  height: 1.37em;
 }
 .react-daterange-picker__calendar {
   width: 350px;
