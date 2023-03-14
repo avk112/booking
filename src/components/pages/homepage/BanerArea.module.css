@@ -63,19 +63,20 @@
     .banner__form {
         width: 100%;
         background-color: rgba(255, 255, 255, 0.5);
+        font-size: calc(1em*3);
     }
 
     .banner__form__title {
-        font-size: calc(2.15em*3);
+        /*font-size: calc(2.15em*3);*/
     }
 
     .banner__form p {
-        font-size: calc(1em*3);
+        /*font-size: calc(1em*3);*/
     }
 
 
     .banner__form__button {
-        font-size: calc(1.14em*3);
+        /*font-size: calc(1.14em*3);*/
         padding: 4.6%;
     }
 }

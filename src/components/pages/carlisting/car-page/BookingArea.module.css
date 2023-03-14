@@ -283,8 +283,8 @@
 
     .dropItem {
         /*font-size: calc(1em/3);*/
-        padding: 0 0 1em 0;
-        margin: 0 0 4em 0;
+        padding: 0 0 3em 0;
+        margin: 0 0 0.5em 0;
     }
 
     .dropItem input {
@@ -322,10 +322,5 @@
     .booking__acceptationForm {
         font-size: 0.6em;
     }
-
-
-
-
-
 
 }

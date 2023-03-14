@@ -121,6 +121,10 @@
         background-color: #ff992e;
     }
 
+    .filter__form {
+        font-size: calc(1em*3);
+    }
+
     .filter__headerBlock__title {
         font-size: calc(1.45em*3);
     }
@@ -130,19 +134,20 @@
     }
 
     .filter__form__item h2 {
-        font-size: 4em;
+        font-size: 1.2em;
+        line-height: 1.2;
     }
 
     .filter__form__item__inputBlock {
-        max-height: calc(15em*3);
-        gap: 1em;
+        /*max-height: calc(15em*3);*/
+        /*gap: 1em;*/
     }
 
     .filter__form__item__inputBlock::-webkit-scrollbar {
-        width: calc(0.4em*3);
+        /*width: calc(0.4em*3);*/
     }
 
     .filter__form__item__inputBlock label {
-        font-size: calc(1.13em*3);
+        /*font-size: calc(1.13em*3);*/
     }
 }

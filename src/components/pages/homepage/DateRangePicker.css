@@ -11,6 +11,8 @@
   line-height: 1.2em;
   font-weight: 400;
   color: #718096;
+  /*box-sizing: border-box;*/
+  /*overflow: auto;*/
 }
 .react-daterange-picker,
 .react-daterange-picker *,
@@ -26,6 +28,8 @@
 }
 .react-daterange-picker__wrapper {
   display: flex;
+  width: 100%;
+  /*flex-wrap: wrap;*/
   flex-grow: 1;
   flex-shrink: 0;
   align-items: center;
@@ -38,6 +42,11 @@
   padding: 0 2px;
   box-sizing: content-box;
 }
+
+.react-daterange-picker__inputGroup input:first-child {
+  left:0
+}
+
 .react-daterange-picker__inputGroup__divider {
   padding: 1px 0;
   white-space: pre;
@@ -67,9 +76,11 @@
   padding-left: calc(1px +  0.54em);
 }
 .react-daterange-picker__button {
+  position: relative;
+  font-size: 1.025vw;
   border: 0;
   background: transparent;
-  padding: 4px 6px;
+  padding: 0.29em;
 }
 .react-daterange-picker__button:enabled {
   cursor: pointer;
@@ -82,19 +93,28 @@
   stroke: #6d6d6d;
 }
 .react-daterange-picker__button svg {
-  font-size: 1.025vw;;
   display: flex;
   width: 1.37em;
   height: 1.37em;
 }
 .react-daterange-picker__calendar {
-  width: 350px;
-  max-width: 100vw;
-  z-index: 500;
+  width: 100%;
+  max-width: 80vw;
+  z-index: 19;
 }
 .react-daterange-picker__calendar--closed {
   display: none;
 }
 .react-daterange-picker__calendar .react-calendar {
   border-width: thin;
+}
+
+
+
+/*MEDIA*/
+
+@media screen and (max-device-width: 540px) {
+  .react-daterange-picker__button {
+    font-size: calc(1.025vw*3);
+  }
 }

@@ -1018,41 +1018,42 @@ html, body {
     margin: 0 0 7.25% 0;
   }
 
-  .universalForm__item {
-    margin: 0 0 10% 0;
-  }
+  /*.universalForm__item {*/
+  /*  !*margin: 0 0 10% 0;*!*/
+  /*  padding: 0 0 1em 0;*/
+  /*}*/
 
-  .universalForm__item__subtitle {
-    font-size: calc(1.14em*3);
-    margin: 0 0 0.4em 0;
-  }
+  /*.universalForm__item__subtitle {*/
+  /*  !*font-size: calc(1.14em*3);*!*/
+  /*  margin: 0 0 0.4em 0;*/
+  /*}*/
 
-  .universalForm__item__selectBlock {
-    top: 63%;
-    margin: 0 0 7% 0;
-  }
+  /*.universalForm__item__selectBlock {*/
+  /*  top: 63%;*/
+  /*  !*margin: 0 0 7% 0;*!*/
+  /*}*/
 
-  .universalForm__item__selectBlock__titleBlock {
-    padding: 3% 5%;
-  }
+  /*.universalForm__item__selectBlock__titleBlock {*/
+  /*  padding: 3% 5%;*/
+  /*}*/
 
-  .universalForm__item__selectBlock__titleBlock__title {
-    font-size: calc(1.14em*3);
-    margin: 0;
-  }
+  /*.universalForm__item__selectBlock__titleBlock__title {*/
+  /*  !*font-size: calc(1.14em*3);*!*/
+  /*  margin: 0;*/
+  /*}*/
 
-  .universalForm__item__selectBlock__dropdownBlock input {
-    font-size: calc(1em*3);
-  }
+  /*.universalForm__item__selectBlock__dropdownBlock input {*/
+  /*  font-size: calc(1em*3);*/
+  /*}*/
 
-  .universalForm__item__selectBlock__dropdownBlock__select span {
-    font-size: calc(1em*3);
-  }
+  /*.universalForm__item__selectBlock__dropdownBlock__select span {*/
+  /*  font-size: calc(1em*3);*/
+  /*}*/
 
   .universalForm__item__dataRangePicker {
-    top: 63%;
-    padding: 1% 5%;
-    font-size: calc(1em*3);
+    /*top: 40%;*/
+    padding: 4% 5%;
+    font-size: calc(1em*1.13);
   }
 
   .form-order {
