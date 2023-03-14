@@ -190,7 +190,7 @@ const BookingArea = ({car,hidden=false}) => {
 
     return (car?.name
             ?
-            <div className={classes.booking} style={hidden ? { zIndex: "70", padding: "2em", height: "95vh"} : {}}>
+            <div className={classes.booking} style={hidden ? { zIndex: "70", padding: "2em", height: "90vh"} : {}}>
                <HiddenScreen
                     insertBlock={bookingConfirmed
                         ?<FormAcceptation
