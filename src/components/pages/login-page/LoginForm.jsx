@@ -61,7 +61,7 @@ const LoginForm = ({handleFormType=()=>{}}) => {
                 onChange={handleFormInput}
             />
             <div>
-                <span>Don't have account already? </span>
+                <span>Don't have account yet? </span>
                 <span className={classes.loginPage__form__link} onClick={(e)=>handleFormType(e,true)}>Register now</span>
             </div>
 
