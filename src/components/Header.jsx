@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState}from 'react';
-import logoImg from "../image/logo-car.png";
-import {NavLink} from "react-router-dom";
+import blackLogoImg from "../image/logo-car.png";
+import whiteLogoImg from "../image/logo-white.png";
+import {Link, NavLink} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {getAllNavs} from "../redux/navagationsSlice";
 import {breakUser, getUser} from "../redux/userSlice";
@@ -17,6 +18,7 @@ const Header = () => {
     const [scroll, setScroll] = useState(0);
     const [isVisibleHiddenScreen, setIsVisibleHiddenScreen] = useState(false);
     const visibleBackground = scroll > scrollRef.current?.offsetTop ? "visible-background" : "hidden-background";
+    const logoImg = scroll > scrollRef.current?.offsetTop ? whiteLogoImg : blackLogoImg;
 
     const handleHiddenScreen = ()=> {
         setIsVisibleHiddenScreen(prev=>!prev)
@@ -91,7 +93,9 @@ const Header = () => {
                 handleScreenStatus={handleHiddenScreen}
             />
             <div className="header__logo">
-                <img src={logoImg} alt="logo"/>
+               <Link to="/">
+                   <img src={logoImg} alt="logo"/>
+               </Link>
             </div>
             <nav className="header__nav-block" ref={scrollRef}>
                 <ul className="header__nav-block__main">
