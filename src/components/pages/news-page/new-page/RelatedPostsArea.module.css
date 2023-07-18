@@ -33,7 +33,7 @@
     padding: 55% 5% 5% 5%;
 }
 
-.relatedPosts__item img {
+.relatedPosts__item__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -41,6 +41,16 @@
     top: 0;
     transition: all 0.3s linear;
     z-index: 2;
+}
+
+.relatedPosts__item__imgSmall {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
+    filter: blur(5px);
 }
 
 .relatedPosts__item__title {

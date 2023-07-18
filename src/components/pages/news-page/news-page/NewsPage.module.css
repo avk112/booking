@@ -16,9 +16,18 @@
     text-decoration: none;
 }
 
-.newsPage__item img {
+.newsPage__item__img {
     width: 100%;
     object-fit: cover;
+}
+
+.newsPage__item__imgSmall {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     z-index: 2;
+     filter: blur(5px);
 }
 
 .newsPage__item p {
