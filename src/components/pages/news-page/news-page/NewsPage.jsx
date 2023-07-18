@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import classes from "./NewsPage.module.css";
 import newsData from "../../../../data/news";
-import {Link} from "react-router-dom";
 import usePagination from "../../../hooks/usePagination";
 import UniversalBanner from "../../../UniversalBanner";
 import Breadcrumbs from "../../../Breadcrumbs";

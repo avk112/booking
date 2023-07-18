@@ -12,20 +12,21 @@ const ShortNew = ({item}) => {
 
     return (
         <div className={classes.newsPage__item}>
-            <img
-                src={item.img}
-                className={classes.newsPage__item__img}
-                style={{opacity: isLoadedImg ? 1: 0}}
-                loading="lazy"
-                onLoad={handleLoadedImg}
-            />
-            {!isLoadedImg &&
+            <div className={classes.newsPage__item__imgBlock}>
                 <img
-                    src={item.imgSmall}
-                    className={classes.newsPage__item__imgSmall}
-                    loading="lazy"
+                    src={item.img}
+                    className={classes.newsPage__item__imgBlock__img}
+                    style={{display: isLoadedImg ? "flex": "none"}}
+                    onLoad={handleLoadedImg}
                 />
-            }
+                {!isLoadedImg &&
+                    <img
+                        src={item.imgSmall}
+                        className={classes.newsPage__item__imgBlock__imgSmall}
+                        loading="lazy"
+                    />
+                }>
+            </div>
                 <Link to={item.url}>
                 <h3 className={classes.newsPage__item__title}>
                 {item.id} {item.name}
